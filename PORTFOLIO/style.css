@@ -1,0 +1,238 @@
+@font-face {
+    font-family: ENR;
+    src: url(fonts/PPEditorialNew-Regular.otf);
+}
+
+@font-face {
+    font-family: ENL;
+    src: url(fonts/PPEditorialNew-Ultralight.otf);
+}
+
+@font-face {
+    font-family: ENI;
+    src: url(fonts/PPEditorialNew-Italic.otf);
+}
+
+@font-face {
+    font-family: ENLI;
+    src: url(fonts/PPEditorialNew-Italic.otf);
+}
+
+@font-face {
+    font-family: NMB;
+    src: url(fonts/PPNeueMontreal-Book.otf);
+}
+
+@font-face {
+    font-family: NMM;
+    src: url(fonts/PPNeueMontreal-Medium.otf);
+}
+
+
+
+
+html {
+    background: aliceblue;
+    font-size: 18px;
+    margin-left: 8vw;
+    margin-top: 4vw;
+}
+
+h1 {
+    position: relative;
+    font-family: ENL;
+    font-size: 3rem;
+    font-weight: 100;
+    color: black;
+    margin-bottom: -15px;
+}
+
+h2 {
+    position: relative;
+    font-family: NMM;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+
+h3 {
+    position: relative;
+    font-family: NMB;
+    font-size: 1rem;
+    color: black;
+}
+
+h4 {
+    position: relative;
+    font-family: NMB;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.tag {
+    font-family: NMB;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: black;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.name {
+    font-family: ENR;
+}
+
+.name:hover {
+    cursor: help;
+    font-style: italic;
+}
+
+.name span {
+    display: none;
+    overflow: hidden;
+}
+
+.name:hover span {
+    display: block;
+    position: fixed;
+    left: 80%;
+    top: 5%;
+    transform: translate(-92%);
+    border: 1.5px solid black;
+    background: aliceblue;
+    width:300px;
+    height:300px;
+    z-index: 2;
+}
+
+.school:hover {
+    cursor: help;
+}
+
+.school span {
+    display: none;
+    overflow: hidden;
+}
+
+.school:hover span {
+    display: block;
+    position: fixed;
+    left: 80%;
+    top: 5%;
+    transform: translate(-92%);
+    border: 1.5px solid black;
+    background: aliceblue;
+    width:300px;
+    height:300px;
+    z-index: 2;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.works_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.section_wrapper {
+    width: 45%;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-bottom: -10px;
+}
+
+
+.section_wrapper a span{
+    position: absolute;
+    display: none;
+    overflow: hidden;
+}
+
+.section_wrapper a:hover span {
+    display: block;
+    position: fixed;
+    left: 80%;
+    top: 5%;
+    transform: translate(-92%);
+    border: 1.5px solid black;
+    background: aliceblue;
+    width:300px;
+    height:300px;
+    z-index: 1;
+}
+
+.links_wrapper {
+    flex-direction: column;
+}
+
+.links_list {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.divider {
+    border-top: 1.5px solid black;
+}
+
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile devices (phones, 600px and under) */
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 30px;
+    }
+    
+    .section_wrapper {
+       width: 100%;
+    }
+
+    .works_wrapper {
+        flex-direction: column;
+     }
+
+     .links_list {
+        flex-direction: column;
+     }
+
+}
